@@ -141,27 +141,7 @@ font-family: 'Rajdhani', sans-serif;
 .col-xl-auto {
   padding-right: 15px;
   padding-left: 15px;
-  position: relative;
-}
-.col-lg-4{
-  padding-right: 15px;
-  padding-left: 15px;
-  position: relative;
-  width: 25%;
-}
-
-.equal-height {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.equal-height .col-lg-4 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-}
-
+  position: relative; }
 
 .ltn__no-gutter > [class*='col-'] {
   /* No padding only for child columns */
@@ -179,8 +159,8 @@ font-family: 'Rajdhani', sans-serif;
     margin-left: -0px;
     margin-right: -0px; }
   .ltn__custom-gutter > [class*='col-'] {
-    padding-right: 10px;
-    padding-left: 10px; } }
+    padding-right: 0px;
+    padding-left: 0px; } }
 
 @media (max-width: 991px) {
   /* Modify this based on column def */
@@ -2327,7 +2307,7 @@ ul {
   margin-bottom: -100px; }
 
 .mb--100 {
-  margin-bottom: 50px; }
+  margin-bottom: -38px; }
 
 .mb--110 {
   margin-bottom: -100px; }
@@ -7996,34 +7976,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   position: relative; 
-  height: 580px;
-  background-size: contain;
-  background-position: bottom right; 
-  background-repeat: no-repeat; 
-}
-
-.ltn__feature-item1 {
-  padding: 40px 25px 10px;
-  -webkit-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-  position: relative; 
-  /* height: 580px; */
-  background-size: contain;
-  background-position: bottom right; 
-  background-repeat: no-repeat; 
-}
-
-.ltn__feature-item2 {
-  padding: 40px 25px 10px;
-  -webkit-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-  position: relative; 
-  /* height: 580px; */
-  background-size: contain;
-  background-position: bottom right; 
-  background-repeat: no-repeat; 
+  /* height: 430px; */
 }
 
 
@@ -8322,9 +8275,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     transition: all 0.3s ease 0s;
     color: var(--ltn__color-1);
     font-weight: 700;
-    font-size: 14px; 
-  }
-
+    font-size: 14px; }
   .ltn__feature-item-6.active, .ltn__feature-item-6:hover {
     -webkit-box-shadow: var(--ltn__box-shadow-1);
     box-shadow: var(--ltn__box-shadow-1); }
@@ -14899,8 +14850,8 @@ textarea.is-invalid {
 }
 
 .slick-list {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
+  padding-left: 0;
+  padding-right: 0;
   overflow: hidden;
 }
 
