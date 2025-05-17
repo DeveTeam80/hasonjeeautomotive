@@ -4297,8 +4297,8 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 .ltn__main-menu > ul > li:nth-last-child(2) .sub-menu li > .sub-menu,
 .ltn__main-menu > ul > li:nth-last-child(3) ul li > ul,
 .ltn__main-menu > ul > li:nth-last-child(3) .sub-menu li > .sub-menu {
-  left: auto;
-  right: 100%; }
+  /* left: auto; */
+  left: 100%; }
 
 .ltn__main-menu li > ul.ltn__sub-menu-col-2,
 .ltn__main-menu .sub-menu.ltn__sub-menu-col-2,
