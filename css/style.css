@@ -5430,8 +5430,8 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 .ltn__main-menu>ul>li:nth-last-child(2) .sub-menu li>.sub-menu,
 .ltn__main-menu>ul>li:nth-last-child(3) ul li>ul,
 .ltn__main-menu>ul>li:nth-last-child(3) .sub-menu li>.sub-menu {
-  left: auto;
-  right: 100%;
+  /* left: auto; */
+  left: 100%;
 }
 
 .ltn__main-menu li>ul.ltn__sub-menu-col-2,
@@ -25956,9 +25956,10 @@ blockquote.has-text-align-right,
 }
 
 .main-menu ul.sub-menu li.menu-item-has-children>a:after {
-  content: "\f105";
+  content: "\f067";
   float: right;
   top: 1px;
+  
 }
 
 .main-menu ul.sub-menu li a {
