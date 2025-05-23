@@ -5698,7 +5698,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .menu-icon>a::before {
-  content: "\f067";
+  /* content: "\f067"; */
   font-size: 8px;
   position: absolute;
   top: 50%;
@@ -19373,10 +19373,10 @@ textarea.is-invalid {
   background-color: var(--theme-color);
 }
 
-.slick-dots .slick-active button::before {
+/* .slick-dots .slick-active button::before {
   opacity: 1;
   visibility: visible;
-}
+} */
 
 .slick-arrow {
   display: inline-block;
@@ -44138,4 +44138,17 @@ hr.style1 {
 
 .ft-28 {
   font-size: 28px;
+}
+
+
+
+
+
+
+#lightcase-sequenceInfo {
+    display: none !important;
+  }
+
+ul.slick-dots {
+  display: none !important;
 }
