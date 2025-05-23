@@ -1765,11 +1765,15 @@ ul {
   color: var(--ltn__primary-color) !important;
 }
 
-.slick-arrow-3 .slick-prev {
+
+
+
+.slick-arrow.slick-next{
   background-color: var(--ltn__secondary-color);
   border-color: var(--border-color-4);
   color: var(--white) !important;
 }
+
 
 /* slick-arrow-4 */
 .slick-arrow-4 {
