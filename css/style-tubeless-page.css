@@ -14780,12 +14780,16 @@ textarea.is-invalid {
 .slick-arrow.slick-next {
   right: var(--pos-x, -200px);
   left: auto;
+  background-color: var(--ltn__secondary-color);
+  border-color: var(--border-color-4);
+  color: var(--white) !important;
 }
 
-.slick-arrow:hover {
-  background-color: var(--title-color);
-  color: var(--white-color);
-  border-color: var(--title-color);
+
+.slick-arrow-1 .slick-arrow:hover {
+  background-color: var(--ltn__secondary-color);
+  border-color: var(--ltn__secondary-color);
+  color: var(--white) !important;
 }
 
 .arrow-margin .slick-arrow {
