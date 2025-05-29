@@ -8230,6 +8230,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 /* slide-item-3 */
 .ltn__slide-item-3 .row [class*='col-'] {
   position: inherit;
+  z-index: 100;
 }
 
 .ltn__slide-item-3 .slide-item-info {
