@@ -108,101 +108,7 @@
         <header class="ltn__header-area ltn__header-4 ltn__header-6 ltn__header-transparent gradient-color-2">
 
 
-            <script>
 
-                document.addEventListener('scroll', () => {
-                    const elements = document.querySelectorAll('.animate-on-scroll2, .animate-on-scroll3');
-                    elements.forEach((el) => {
-                        const rect = el.getBoundingClientRect();
-                        if (rect.top < window.innerHeight) {
-                            el.classList.add('visible');
-                        }
-                    });
-                });
-
-
-                document.addEventListener("DOMContentLoaded", function () {
-                    const target = document.querySelector('.about-us-info-wrap');
-
-
-                    const observer = new IntersectionObserver((entries) => {
-                        entries.forEach(entry => {
-                            if (entry.isIntersecting) {
-                                target.classList.add('fade-in-up');
-                                observer.unobserve(target); // Stop observing after the animation
-                            }
-                        });
-                    });
-
-                    observer.observe(target);
-                });
-                document.addEventListener("DOMContentLoaded", function () {
-                    const target = document.querySelector('.about-us-info-wrap');
-
-
-                    const observer = new IntersectionObserver((entries) => {
-                        entries.forEach(entry => {
-                            if (entry.isIntersecting) {
-                                target.classList.add('fade-in-up');
-                                observer.unobserve(target); // Stop observing after the animation
-                            }
-                        });
-                    });
-
-                    observer.observe(target);
-                });
-
-
-                document.addEventListener("DOMContentLoaded", () => {
-                    const titles = document.querySelectorAll(".section-title-area");
-
-                    const observer = new IntersectionObserver((entries) => {
-                        entries.forEach((entry) => {
-                            if (entry.isIntersecting) {
-                                entry.target.style.opacity = "1";
-                                entry.target.style.visibility = "visible";
-                                entry.target.style.animationName = "fadeOutUp";
-                                observer.unobserve(entry.target);
-                            }
-                        });
-                    }, { threshold: 0.1 });
-
-                    titles.forEach((title) => {
-                        observer.observe(title);
-                    });
-                });
-
-
-                document.addEventListener("DOMContentLoaded", () => {
-                    const elements = document.querySelectorAll(".animate-on-scroll");
-
-                    const observer = new IntersectionObserver((entries, observer) => {
-                        entries.forEach(entry => {
-                            if (entry.isIntersecting) {
-                                entry.target.classList.add("visible");
-                                observer.unobserve(entry.target); // Stop observing once animated
-                            }
-                        });
-                    });
-
-                    elements.forEach(element => observer.observe(element));
-                });
-                document.addEventListener("DOMContentLoaded", () => {
-                    const elements = document.querySelectorAll(".animate-on-scroll1");
-
-                    const observer = new IntersectionObserver((entries, observer) => {
-                        entries.forEach(entry => {
-                            if (entry.isIntersecting) {
-                                entry.target.classList.add("visible");
-                                observer.unobserve(entry.target);
-                            }
-                        });
-                    });
-
-                    elements.forEach(element => observer.observe(element));
-                });
-
-            </script>
             <!-- ltn__header-middle-area start -->
             <div class="ltn__header-middle-area ltn__sticky-bg-black ltn__logo-right-menu-option">
 
@@ -223,13 +129,13 @@
                                 <nav>
                                     <div class="ltn__main-menu">
                                         <ul>
-                                            <li><a href="https://hassonjeeautomotive.com/">Home</a>
+                                            <li><a href="../https://hassonjeeautomotive.com/">Home</a>
 
                                             </li>
                                             <li><a href="../about">About</a>
 
                                             </li>
-                                            <li><a href="../services">Our Categories</a>
+                                            <li class="menu-icon"><a href="../services">Our Categories</a>
                                                 <ul>
                                                     <li><a href="../best-tyres-for-all-vehicles-in-amravati">MRF
                                                             Tyres</a>
@@ -246,72 +152,71 @@
                                                 <a>Our Services</a>
                                                 <ul class="sub-menu">
                                                     <li class="menu-item-has-children">
-                                                        <a href="#">Car And Bike General Services</a>
+                                                        <a href="#">Car And Bike General Services<span
+                                                                class="float-end">>></span></a>
                                                         <ul class="sub-menu">
                                                             <li><a
-                                                                    href="../tubeless-tyre-puncture-repair-in-amravati.html">Tyre
+                                                                    href="../tubeless-tyre-puncture-repair-in-amravati">Tyre
                                                                     Puncture Repair</a></li>
-                                                            <li><a href="../ac-gas-refilling-in-amravati.html">Ac Gas
+                                                            <li><a href="../ac-gas-refilling-in-amravati">Ac Gas
                                                                     Refilling</a></li>
                                                             <li><a
-                                                                    href="../wheel-alignment-and-balancing-in-amravati.html">Wheel
+                                                                    href="wheel-alignment-and-balancing-in-amravati">Wheel
                                                                     Alignment and Balancing</a></li>
-                                                            <li><a href="../nitrogen-air-refilling.html">Nitrogen Air
+                                                            <li><a href="../nitrogen-air-refilling">Nitrogen Air
                                                                     Refilling</a></li>
                                                         </ul>
                                                     </li>
                                                     <li class="menu-item-has-children">
-                                                        <a href="#">Battery Services</a>
+                                                        <a href="#">Battery Services<span
+                                                                class="float-end">>></span></a>
                                                         <ul class="sub-menu">
                                                             <li><a
-                                                                    href="../car-and-bike-battery-charging-services.html">Battery
+                                                                    href="../car-and-bike-battery-charging-services">Battery
                                                                     Charging</a></li>
-                                                            <li><a href="../jump-start-service-in-amravati.html">Jump
-                                                                    Start Service</a></li>
-                                                            <li><a href="../home-battery-fitting-in-amravati.html">Home
+                                                            <li><a href="../jump-start-service-in-amravati">Jump
+                                                                    Start
+                                                                    Service</a></li>
+                                                            <li><a href="../home-battery-fitting-in-amravati">Home
                                                                     Battery Fitting</a></li>
                                                         </ul>
                                                     </li>
                                                     <li class="menu-item-has-children">
-                                                        <a href="#">Car Detailing Services</a>
+                                                        <a href="#">Car Detailing Services<span
+                                                                class="float-end">>></span></a>
                                                         <ul class="sub-menu">
-                                                            <li><a href="../ceramic-coating-in-amravati.html"> Ceramic
-                                                                    Coating </a></li>
-                                                            <li><a href="../car-glass-films-in-amravati.html">Car Glass
+                                                            <li><a href="../ceramic-coating-in-amravati"> Ceramic
+                                                                    Coating
+                                                                </a></li>
+                                                            <li><a href="../ppf-coating-in-amravati"> PPF Coating </a>
+                                                            </li>
+                                                            <li><a href="../car-underbody-coating-in-amravati"> Car
+                                                                    Underbody Coating </a></li>
+                                                            <li><a href="../car-glass-films-in-amravati">Car Glass
                                                                     Films</a></li>
-                                                            <li><a href="../car-repairing-service-in-amravati.html">Car
-                                                                    & Bike Repairing</a></li>
-                                                            <li><a href="../car-washing-service-in-amravati.html">Car
+                                                            <li><a href="../car-repairing-service-in-amravati">Car &
+                                                                    Bike
+                                                                    Repairing</a></li>
+                                                            <li><a href="../car-washing-service-in-amravati">Car
                                                                     Washing</a></li>
                                                         </ul>
                                                     </li>
                                                     <li class="menu-item-has-children">
-                                                        <a href="#">Ampere EV Bikes Servicing</a>
+                                                        <a href="#">Ampere EV Bikes Servicing<span
+                                                                class="float-end">>></span></a>
                                                         <ul class="sub-menu">
                                                             <li><a
-                                                                    href="../general-repairs-and-services-for-ampere-ev.html">General
+                                                                    href="../general-repairs-and-services-for-ampere-ev">General
                                                                     Repairs & Servicing For Ampere EV</a></li>
-                                                            <!-- <li><a href="index-rtl-2.html"> Battery repairs for out of warranty ampere electric bikes</a></li> -->
+                                                            <!-- <li><a href="../../index-rtl-2"> Battery repairs for out of warranty ampere electric bikes</a></li> -->
                                                         </ul>
                                                     </li>
                                                 </ul>
                                             </li>
-                                            <li><a href="">Our Garage</a>
-                                                <ul>
-                                                    <li><a href="../car-detailing-service-for-bmw-in-amravati">BMW</a>
-                                                    </li>
-                                                    <li><a href="../ceramic-coating-for-audi-in-amravati">AUDI</a></li>
-                                                    <li><a
-                                                            href="../turtle-wax-service-for-mercedes-benz-in-amravati">MERCEDES-BENZ</a>
-                                                    </li>
-                                                    <li><a href="../toyota-ceramic-coating-in-amravati">TOYOTA</a></li>
-                                                    <li><a href="../hyundai-cars-detailing-in-amravati">HYUNDAI</a></li>
-
-                                                </ul>
-                                            </li>
+                                            <li><a href="../brands/brands">Our Garage</a></li>
 
                                             <li><a href="../blog">Blogs</a></li>
-                                            <li class="special-link"><a href="../contact">GET APPOINTMENT</a></li>
+                                            <li class="special-link"><a href="contact">GET APPOINTMENT</a></li>
                                         </ul>
                                     </div>
                                 </nav>
@@ -873,6 +778,7 @@
                                             <li><a href="../about">About us</a></li>
                                             <li><a href="../blog">Blogs</a></li>
                                             <li><a href="../services">Categories</a></li>
+                                            <li><a href="../brands/brands">Our Garage</a></li>
                                             <li><a href="../sitemap">Sitemap</a></li>
                                             <li><a href="../areas-we-serve">Areas We Serve</a></li>
                                         </ul>
