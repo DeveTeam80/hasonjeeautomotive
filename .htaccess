@@ -12,7 +12,13 @@ RewriteRule ^ %{REQUEST_URI}.html [NC,L]
 
 #URL Redirections
 Redirect 301 /nexa-servicing-and-detailing-in-amravati /brands/nexa-servicing-and-detailing-in-amravati
-
+Redirect 301 /car-detailing-for-maruti-suzuki /brands/car-detailing-for-maruti-suzuki
+Redirect 301 /car-detailing-for-tata-cars-in-amravati /brands/car-detailing-for-tata-cars-in-amravati
+Redirect 301 /ceramic-coating-for-audi-in-amravati /brands/ceramic-coating-for-audi-in-amravati
+Redirect 301 /hyundai-cars-detailing-in-amravati /brands/hyundai-cars-detailing-in-amravati
+Redirect 301 /skoda-car-detailing-in-amravati /brands/skoda-car-detailing-in-amravati
+Redirect 301 /toyota-ceramic-coating-in-amravati /brands/toyota-ceramic-coating-in-amravati
+Redirect 301 /turtle-wax-service-for-mercedes-benz-in-amravati /brands/turtle-wax-service-for-mercedes-benz-in-amravati
 #URL Redirections
 
 ErrorDocument 404 /404.html
