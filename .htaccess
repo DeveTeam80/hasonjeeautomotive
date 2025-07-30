@@ -10,4 +10,9 @@ RewriteRule ^ /%1 [NC,L,R]
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^ %{REQUEST_URI}.html [NC,L]
 
+#URL Redirections
+Redirect 301 /nexa-servicing-and-detailing-in-amravati /brands/nexa-servicing-and-detailing-in-amravati
+
+#URL Redirections
+
 ErrorDocument 404 /404.html
