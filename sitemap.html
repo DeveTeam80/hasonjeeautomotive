@@ -10,49 +10,178 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="canonical" href="https://hassonjeeautomotive.com/sitemap">
 
-    <!-- Place favicon.png in the root directory -->
-    <link rel="shortcut icon" href="img/hassonjee-favicon.png" type="image/x-icon" />
-    <!-- Font Icons css -->
+    <link rel="shortcut icon" href="img/hassonjee-favicon.png" type="image/x-icon">
+
     <link rel="stylesheet" href="css/font-icons.css">
-    <!-- plugins css -->
     <link rel="stylesheet" href="css/plugins.css">
-    <!-- Main Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
-    <!-- Responsive css -->
     <link rel="stylesheet" href="css/responsive.css">
-    <!-- Google tag (gtag.js) -->
+
+    <style>
+        /* --- Scoped styles for sitemap only --- */
+        .sitemap-wrap {
+            padding: 32px 0 64px;
+        }
+
+        .sitemap-intro {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .sitemap-search {
+            width: 320px;
+            max-width: 100%;
+        }
+
+        .sitemap-search input {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+        }
+
+        .sitemap-grid {
+            display: grid;
+            gap: 18px;
+            grid-template-columns: repeat(12, minmax(0, 1fr));
+        }
+
+        .sm-col-12 {
+            grid-column: span 12 / span 12;
+        }
+
+        @media (min-width: 768px) {
+            .md-col-6 {
+                grid-column: span 6 / span 6;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .lg-col-4 {
+                grid-column: span 4 / span 4;
+            }
+
+            .lg-col-8 {
+                grid-column: span 8 / span 8;
+            }
+        }
+
+        .site-card {
+            background: #fff;
+            border: 1px solid #eee;
+            border-radius: 14px;
+            padding: 18px;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, .03);
+        }
+
+        .site-card h3 {
+            font-size: 18px;
+            margin: 0 0 10px;
+        }
+
+        .site-card p {
+            margin: 0 0 14px;
+            color: #6b7280;
+            font-size: 14px;
+        }
+
+        .link-list,
+        .link-list ol,
+        .link-list ul {
+            list-style: none;
+            padding-left: 0;
+            margin: 0;
+        }
+
+        .link-list li {
+            margin: 6px 0;
+        }
+
+        .link-list a {
+            text-decoration: none;
+            color: #111827;
+        }
+
+        .link-list a:hover {
+            text-decoration: underline;
+        }
+
+        /* Nested groups */
+        details {
+            border: 1px solid #f1f1f1;
+            border-radius: 10px;
+            padding: 10px 12px;
+            margin: 10px 0;
+            background: #fafafa;
+        }
+
+        details>summary {
+            cursor: pointer;
+            font-weight: 600;
+            list-style: none;
+        }
+
+        details>summary::-webkit-details-marker {
+            display: none;
+        }
+
+        /* Brand grid */
+        .brand-item {
+            margin: 8px 0 12px;
+        }
+
+        .brand-actions {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+            font-size: 14px;
+            margin-top: 6px;
+        }
+
+        /* Pills for sections */
+        .pill {
+            display: inline-block;
+            font-size: 12px;
+            padding: 3px 8px;
+            border-radius: 999px;
+            border: 1px solid #e5e7eb;
+            background: #f9fafb;
+            color: #374151;
+            margin-left: 8px;
+        }
+
+        /* Filter hide */
+        .filter-hide {
+            display: none !important;
+        }
+    </style>
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-SW5ZL9ZM6R"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
-
         gtag('config', 'G-SW5ZL9ZM6R');
     </script>
-
 </head>
 
 <body>
-
     <div class="body-wrapper">
-
-        <!-- HEADER AREA START (header-4) -->
         <header class="ltn__header-area ltn__header-4 ltn__header-6 ltn__header-transparent gradient-color-2">
-
-
-
-            <!-- ltn__header-middle-area start -->
             <div class="ltn__header-middle-area ltn__sticky-bg-black ltn__logo-right-menu-option">
-
                 <div class="container">
                     <div class="row">
                         <div class="col">
                             <div class="site-logo-wrap">
                                 <div class="site-logo">
-                                    <a href="https://hassonjeeautomotive.com/"><img
-                                            src="img/logoes/hassonjee logo-05.png" alt="Logo" style="width: 50%;"></a>
+                                    <a href="https://hassonjeeautomotive.com/"><img src="img/logoes/hassonjee logo-05.png" alt="Logo" style="width: 50%;"></a>
                                 </div>
-
                             </div>
                         </div>
                         <div class="col header-menu-column menu-color-white">
@@ -60,87 +189,56 @@
                                 <nav>
                                     <div class="ltn__main-menu">
                                         <ul>
-                                            <li><a href="https://hassonjeeautomotive.com/">Home</a>
-
-                                            </li>
-                                            <li><a href="about">About</a>
-
-                                            </li>
+                                            <li><a href="https://hassonjeeautomotive.com/">Home</a></li>
+                                            <li><a href="about">About</a></li>
                                             <li class="menu-icon"><a href="services">Our Categories</a>
                                                 <ul>
-                                                    <li><a href="best-tyres-for-all-vehicles-in-amravati">MRF Tyres</a>
-                                                    </li>
-                                                    <li><a href="ampere-electric-bike-showroom-in-amravati">Ampere
-                                                            Scooter</a></li>
-                                                    <li><a href="premium-car-detailing-services-in-amravati">Turtle
-                                                            Wax</a></li>
+                                                    <li><a href="best-tyres-for-all-vehicles-in-amravati">MRF Tyres</a></li>
+                                                    <li><a href="ampere-electric-bike-showroom-in-amravati">Ampere Scooter</a></li>
+                                                    <li><a href="premium-car-detailing-services-in-amravati">Turtle Wax</a></li>
                                                     <li><a href="exide-batteries-amravati">Exide Batteries</a></li>
-
                                                 </ul>
                                             </li>
                                             <li class="menu-icon menu-item-has-children">
                                                 <a>Our Services</a>
                                                 <ul class="sub-menu">
                                                     <li class="menu-item-has-children">
-                                                        <a href="#">Car And Bike General Services<span
-                                                                class="float-end">>></span></a>
+                                                        <a href="#">Car And Bike General Services<span class="float-end">&gt;&gt;</span></a>
                                                         <ul class="sub-menu">
-                                                            <li><a
-                                                                    href="tubeless-tyre-puncture-repair-in-amravati.html">Tyre
-                                                                    Puncture Repair</a></li>
-                                                            <li><a href="ac-gas-refilling-in-amravati.html">Ac Gas
-                                                                    Refilling</a></li>
-                                                            <li><a
-                                                                    href="wheel-alignment-and-balancing-in-amravati.html">Wheel
-                                                                    Alignment and Balancing</a></li>
-                                                            <li><a href="nitrogen-air-refilling.html">Nitrogen Air
-                                                                    Refilling</a></li>
+                                                            <li><a href="tubeless-tyre-puncture-repair-in-amravati.html">Tyre Puncture Repair</a></li>
+                                                            <li><a href="ac-gas-refilling-in-amravati.html">Ac Gas Refilling</a></li>
+                                                            <li><a href="wheel-alignment-and-balancing-in-amravati.html">Wheel Alignment and Balancing</a></li>
+                                                            <li><a href="nitrogen-air-refilling.html">Nitrogen Air Refilling</a></li>
                                                         </ul>
                                                     </li>
                                                     <li class="menu-item-has-children">
-                                                        <a href="#">Battery Services<span
-                                                                class="float-end">>></span></a>
+                                                        <a href="#">Battery Services<span class="float-end">&gt;&gt;</span></a>
                                                         <ul class="sub-menu">
-                                                            <li><a href="car-and-bike-battery-charging-services.html">Battery
-                                                                    Charging</a></li>
-                                                            <li><a href="jump-start-service-in-amravati.html">Jump Start
-                                                                    Service</a></li>
-                                                            <li><a href="home-battery-fitting-in-amravati.html">Home
-                                                                    Battery Fitting</a></li>
+                                                            <li><a href="car-and-bike-battery-charging-services.html">Battery Charging</a></li>
+                                                            <li><a href="jump-start-service-in-amravati.html">Jump Start Service</a></li>
+                                                            <li><a href="home-battery-fitting-in-amravati.html">Home Battery Fitting</a></li>
                                                         </ul>
                                                     </li>
                                                     <li class="menu-item-has-children">
-                                                        <a href="#">Car Detailing Services<span
-                                                                class="float-end">>></span></a>
+                                                        <a href="#">Car Detailing Services<span class="float-end">&gt;&gt;</span></a>
                                                         <ul class="sub-menu">
-                                                            <li><a href="ceramic-coating-in-amravati"> Ceramic Coating
-                                                                </a></li>
-                                                            <li><a href="ppf-coating-in-amravati"> PPF Coating </a></li>
-                                                            <li><a href="car-underbody-coating-in-amravati"> Car
-                                                                    Underbody Coating </a></li>
-                                                            <li><a href="car-glass-films-in-amravati">Car Glass
-                                                                    Films</a></li>
-                                                            <li><a href="car-repairing-service-in-amravati">Car & Bike
-                                                                    Repairing</a></li>
-                                                            <li><a href="car-washing-service-in-amravati">Car
-                                                                    Washing</a></li>
+                                                            <li><a href="ceramic-coating-in-amravati">Ceramic Coating</a></li>
+                                                            <li><a href="ppf-coating-in-amravati">PPF Coating</a></li>
+                                                            <li><a href="car-underbody-coating-in-amravati">Car Underbody Coating</a></li>
+                                                            <li><a href="car-glass-films-in-amravati">Car Glass Films</a></li>
+                                                            <li><a href="car-repairing-service-in-amravati">Car & Bike Repairing</a></li>
+                                                            <li><a href="car-washing-service-in-amravati">Car Washing</a></li>
                                                         </ul>
                                                     </li>
                                                     <li class="menu-item-has-children">
-                                                        <a href="#">Ampere EV Bikes Servicing<span
-                                                                class="float-end">>></span></a>
+                                                        <a href="#">Ampere EV Bikes Servicing<span class="float-end">&gt;&gt;</span></a>
                                                         <ul class="sub-menu">
-                                                            <li><a
-                                                                    href="general-repairs-and-services-for-ampere-ev.html">General
-                                                                    Repairs & Servicing For Ampere EV</a></li>
-                                                            <!-- <li><a href="index-rtl-2.html"> Battery repairs for out of warranty ampere electric bikes</a></li> -->
+                                                            <li><a href="general-repairs-and-services-for-ampere-ev.html">General Repairs & Servicing For Ampere EV</a></li>
                                                         </ul>
                                                     </li>
                                                 </ul>
                                             </li>
-                                            <li><a href="brands/brands">Our Garage</a>
-                                            </li>
-
+                                            <li><a href="brands/brands">Our Garage</a></li>
                                             <li><a href="blog">Blogs</a></li>
                                             <li class="special-link"><a href="contact">GET APPOINTMENT</a></li>
                                         </ul>
@@ -148,136 +246,94 @@
                                 </nav>
                             </div>
                         </div>
-                        <!-- Mobile Menu Button -->
                         <div class="mobile-menu-toggle menu-btn-white menu-btn-border--- d-xl-none">
                             <a href="#ltn__utilize-mobile-menu" class="ltn__utilize-toggle">
                                 <svg viewBox="0 0 800 600">
-                                    <path
-                                        d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200"
-                                        id="top"></path>
+                                    <path d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200" id="top"></path>
                                     <path d="M300,320 L540,320" id="middle"></path>
-                                    <path
-                                        d="M300,210 C300,210 520,210 540,210 C740,210 640,530 520,410 C440,330 300,190 300,190"
-                                        id="bottom" transform="translate(480, 320) scale(1, -1) translate(-480, -318) ">
-                                    </path>
+                                    <path d="M300,210 C300,210 520,210 540,210 C740,210 640,530 520,410 C440,330 300,190 300,190" id="bottom" transform="translate(480, 320) scale(1, -1) translate(-480, -318) "></path>
                                 </svg>
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- ltn__header-middle-area end -->
         </header>
-        <!-- HEADER AREA END -->
-
-
-        <!-- Utilize Mobile Menu Start -->
         <div id="ltn__utilize-mobile-menu" class="ltn__utilize ltn__utilize-mobile-menu">
             <div class="ltn__utilize-menu-inner ltn__scrollbar">
                 <div class="ltn__utilize-menu-head">
                     <div class="site-logo">
-                        <a href="https://hassonjeeautomotive.com/"><img src="img/logoes/hassonjee logo-05.png"
-                                alt="Logo"></a>
+                        <a href="https://hassonjeeautomotive.com/"><img src="img/logoes/hassonjee logo-05.png" alt="Logo"></a>
                     </div>
                     <button class="ltn__utilize-close">×</button>
                 </div>
-
                 <div class="ltn__utilize-menu">
                     <ul>
-                        <li><a href="https://hassonjeeautomotive.com/">Home</a>
-
-                        </li>
-                        <li><a href="about">About</a>
-
-                        </li>
-
-
-
+                        <li><a href="https://hassonjeeautomotive.com/">Home</a></li>
+                        <li><a href="about">About</a></li>
                         <li><a href="services">Our Categories</a>
                             <ul class="sub-menu">
                                 <li><a href="best-tyres-for-all-vehicles-in-amravati">MRF Tyres</a></li>
                                 <li><a href="exide-batteries-amravati">Exide Batteries</a></li>
                                 <li><a href="ampere-electric-bike-showroom-in-amravati">Ampere Scooter</a></li>
                                 <li><a href="premium-car-detailing-services-in-amravati">Turtle Wax</a></li>
-
                             </ul>
                         </li>
-                        <li class="menu-icon menu-item-has-children">
-                            <a>Our Services</a>
+                        <li class="menu-icon menu-item-has-children"><a>Our Services</a>
                             <ul class="sub-menu">
-                                <li class="menu-item-has-children">
-                                    <a href="#">Car And Bike General Services</a>
+                                <li class="menu-item-has-children"><a href="#">Car And Bike General Services</a>
                                     <ul class="sub-menu">
-                                        <li><a href="tubeless-tyre-puncture-repair-in-amravati.html">Tyre Puncture
-                                                Repair</a></li>
+                                        <li><a href="tubeless-tyre-puncture-repair-in-amravati.html">Tyre Puncture Repair</a></li>
                                         <li><a href="ac-gas-refilling-in-amravati.html">Ac Gas Refilling</a></li>
-                                        <li><a href="wheel-alignment-and-balancing-in-amravati.html">Wheel Allignment
-                                                and Balancing</a></li>
+                                        <li><a href="wheel-alignment-and-balancing-in-amravati.html">Wheel Allignment and Balancing</a></li>
                                         <li><a href="nitrogen-air-refilling.html">Nitrogen Air Refilling</a></li>
                                     </ul>
                                 </li>
-                                <li class="menu-item-has-children">
-                                    <a href="#">Battery Services</a>
+                                <li class="menu-item-has-children"><a href="#">Battery Services</a>
                                     <ul class="sub-menu">
-                                        <li><a href="car-and-bike-battery-charging-services.html">Battery Charging<a>
-                                        </li>
+                                        <li><a href="car-and-bike-battery-charging-services.html">Battery Charging</a></li>
                                         <li><a href="jump-start-service-in-amravati.html">Jump Start Service</a></li>
-                                        <li><a href="home-battery-fitting-in-amravati.html">Home Battery Fitting</a>
-                                        </li>
+                                        <li><a href="home-battery-fitting-in-amravati.html">Home Battery Fitting</a></li>
                                     </ul>
                                 </li>
-                                <li class="menu-item-has-children">
-                                    <a href="#">Car Detailing Services</a>
+                                <li class="menu-item-has-children"><a href="#">Car Detailing Services</a>
                                     <ul class="sub-menu">
-                                        <li><a href="ceramic-coating-in-amravati"> Ceramic Coating </a></li>
-                                        <li><a href="ppf-coating-in-amravati"> PPF Coating </a></li>
-                                        <li><a href="car-underbody-coating-in-amravati"> Car Underbody Coating </a></li>
+                                        <li><a href="ceramic-coating-in-amravati">Ceramic Coating</a></li>
+                                        <li><a href="ppf-coating-in-amravati">PPF Coating</a></li>
+                                        <li><a href="car-underbody-coating-in-amravati">Car Underbody Coating</a></li>
                                         <li><a href="car-glass-films-in-amravati">Car Glass Films</a></li>
                                         <li><a href="car-repairing-service-in-amravati">Car & Bike Repairing</a></li>
                                         <li><a href="car-washing-service-in-amravati">Car Washing</a></li>
                                     </ul>
                                 </li>
-                                <li class="menu-item-has-children">
-                                    <a href="#">Ampere EV Bikes Servicing</a>
+                                <li class="menu-item-has-children"><a href="#">Ampere EV Bikes Servicing</a>
                                     <ul class="sub-menu">
-                                        <li><a href="general-repairs-and-services-for-ampere-ev">General Repairs &
-                                                Servicing For Ampere EV</a></li>
-                                        <!-- <li><a href="index-rtl-2.html"> Battery repairs for out of warranty ampere electric bikes</a></li> -->
+                                        <li><a href="general-repairs-and-services-for-ampere-ev">General Repairs & Servicing For Ampere EV</a></li>
                                     </ul>
                                 </li>
                             </ul>
                         </li>
-                        <li><a href="brands/brands">Our Garage</a>
-
-                        </li>
+                        <li><a href="brands/brands">Our Garage</a></li>
                         <li><a href="blog">Blogs</a></li>
                         <li><a href="contact">Contact</a></li>
                     </ul>
                 </div>
-
-
             </div>
         </div>
-        <!-- Utilize Mobile Menu End -->
-
         <div class="ltn__utilize-overlay"></div>
 
-
-        <!-- BREADCRUMB AREA START -->
         <div class="banner pt-50">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="ltn__breadcrumb-inner ltn__breadcrumb-inner-2 justify-content-between">
-                            <div class="section-title-area ltn__secti on-title-2">
-
-                                <h1 class="section-title ">Sitemap</h1>
+                            <div class="section-title-area ltn__section-title-2">
+                                <h1 class="section-title">Sitemap</h1>
                             </div>
                             <div class="ltn__breadcrumb-list">
                                 <ul>
                                     <li><a href="https://hassonjeeautomotive.com/">Home</a></li>
-                                    <li>Sitemap</a></li>
-                                    <!-- <li>Car Repair</li> -->
+                                    <li>Sitemap</li>
                                 </ul>
                             </div>
                         </div>
@@ -285,233 +341,293 @@
                 </div>
             </div>
         </div>
-        <!-- BREADCRUMB AREA END -->
+        <main class="sitemap-wrap">
+            <div class="container">
+                
 
+                <div class="sitemap-grid">
+                    <section class="site-card sm-col-12 md-col-6 lg-col-4" data-sg>
+                        <h3>Essentials</h3>
+                        <p>Top-level navigation and must-visit pages.</p>
+                        <ul class="link-list">
+                            <li><a href="https://hassonjeeautomotive.com/">Home</a></li>
+                            <li><a href="about">About Us</a></li>
+                            <li><a href="services">Our Categories</a></li>
+                            <li><a href="brands/brands">Our Garage</a></li>
+                            <li><a href="blog">Blog</a></li>
+                            <li><a href="areas-we-serve">Areas We Serve</a></li>
+                            <li><a href="sitemap">Sitemap</a></li>
+                            <li><a href="contact">Contact</a></li>
+                        </ul>
+                    </section>
 
-        <main>
-            <ul class="sitemap-list">
-                <li><a href="https://hassonjeeautomotive.com/">Home</a></li>
-                <li><a href="about">About Us</a></li>
-                <li><a href="services">Our Categories</a>
-                    <ol class="services-list">
-                        <li><a href="best-tyres-for-all-vehicles-in-amravati">MRF Tyres</a></li>
-                        <li><a href="exide-batteries-amravati">Exide Batteries</a></li>
-                        <li><a href="ampere-electric-bike-showroom-in-amravati">Ampere Scooter</a></li>
-                        <li><a href="premium-car-detailing-services-in-amravati">Turtle Wax</a></li>
-                    </ol>
-                </li>
-                <li><a href="services"> Our Services</a>
-                    <ol class="services-list">
-                        <li><a href="tubeless-tyre-puncture-repair-in-amravati">Tyre Puncture Repair Services</a></li>
-                        <li><a href="ac-gas-refilling-in-amravati">AC Gas Refilling in Amravati</a></li>
-                        <li><a href="wheel-alignment-and-balancing-in-amravati">Wheel Alignment and Balancing in
-                                Amravati</a></li>
-                        <li><a href="nitrogen-air-refilling.html">Nitrogen Air Refilling in Amravati</a></li>
-                        <li><a href="car-and-bike-battery-charging-services">Car and Bike Battery Charging Services in
-                                Amravati</a></li>
-                        <li><a href="jump-start-service-in-amravati">Jump Start Service in Amravati</a></li>
-                        <li><a href="home-battery-fitting-in-amravati">Home Battery Fitting Services in Amravati</a>
-                        </li>
-                        <li><a href="ceramic-coating-in-amravati">Ceramic Coating Services in Amravati</a></li>
-                        <li><a href="ppf-coating-in-amravati.html">PPF Coating In Amravati</a></li>
-                        <li><a href="car-underbody-coating-in-amravati.html">Car Underbody Coating In Amravati</a></li>
-                        <li><a href="car-glass-films-in-amravati">Car Glass Film Installation Services in Amravati</a>
-                        </li>
-                        <li><a href="car-repairing-service-in-amravati">Car And Bike Repair Service In Amravati</a></li>
-                        <li><a href="car-washing-service-in-amravati">Car Washing Services In Amravati</a></li>
-                        <li><a href="general-repairs-and-services-for-ampere-ev">Ampere Electric Vehicle Repairs in
-                                Amravati</a></li>
-                    </ol>
-                </li>
-                <li><a href="areas-we-serve">Areas We Serve</a>
-                    <ol class="services-list">
-                        <li><a href="amravati/best-car-services-in-chikaldara-amravati">CHIKALDARA</a></li>
-                        <li><a href="amravati/vehicle-services-in-chandur-railway">CHANDUR RAILWAY</a></li>
-                        <li><a href="amravati/expert-car-services-in-anjangaon">ANJANGAON</a></li>
-                        <li><a href="amravati/vehicle-servicing-in-warud">WARUD</a></li>
-                        <li><a href="amravati/automotive-services-in-paratwada">PARATWADA</a></li>
-                        <li><a href="amravati/car-servicing-in-achalpur">ACHALPUR</a></li>
-                        <li><a href="amravati/shegaon-naka">SHEGAON NAKA</a></li>
-                        <li><a href="amravati/sai-nagar">SAI NAGAR</a></li>
-                        <li><a href="amravati/kathora-naka">KATHORA NAKA</a></li>
-                        <li><a href="amravati/rahatgaon">RAHATGAON</a></li>
-                        <li><a href="amravati/badnera">BADNERA</a></li>
-                        <li><a href="amravati/dastur-nagar">DASTUR NAGAR</a></li>
+                    <section class="site-card sm-col-12 md-col-6 lg-col-4" data-sg>
+                        <h3>Categories</h3>
+                        <p>Product partnerships and showrooms.</p>
+                        <ul class="link-list">
+                            <li><a href="best-tyres-for-all-vehicles-in-amravati">MRF Tyres</a></li>
+                            <li><a href="exide-batteries-amravati">Exide Batteries</a></li>
+                            <li><a href="ampere-electric-bike-showroom-in-amravati">Ampere Scooter</a></li>
+                            <li><a href="premium-car-detailing-services-in-amravati">Turtle Wax</a></li>
+                        </ul>
+                    </section>
 
-                    </ol>
-                <li><a href="brands/brands">Our GARAGE</a>
-                    <ol class="services-list">
-                        <li><a href="">BMW</a>
-                            <ul class="d-flex gap-4">
-                                <li><a href="brands/car-servicing-for-bmw-in-amravati">SERVICING</a></li>
-                                <li><a href="brands/car-detailing-service-for-bmw-in-amravati">DETAILING</a></li>
+                    <section class="site-card sm-col-12 md-col-6 lg-col-4" data-sg>
+                        <h3>Services</h3>
+                        <p>Everything from tyres to detailing and EV servicing.</p>
+                        <details open>
+                            <summary>Car & Bike General Services</summary>
+                            <ul class="link-list" style="margin-top:8px;">
+                                <li><a href="tubeless-tyre-puncture-repair-in-amravati">Tyre Puncture Repair</a></li>
+                                <li><a href="ac-gas-refilling-in-amravati">AC Gas Refilling</a></li>
+                                <li><a href="wheel-alignment-and-balancing-in-amravati">Wheel Alignment and Balancing</a></li>
+                                <li><a href="nitrogen-air-refilling.html">Nitrogen Air Refilling</a></li>
                             </ul>
-                        </li>
-                        <li><a href="">AUDI</a>
-                            <ul class="d-flex gap-4">
-                                <li><a href="brands/audi-car-servicing-in-amravati">SERVICING</a></li>
-                                <li><a href="brands/ceramic-coating-for-audi-in-amravati">DETAILING</a></li>
+                        </details>
+                        <details>
+                            <summary>Battery Services</summary>
+                            <ul class="link-list" style="margin-top:8px;">
+                                <li><a href="car-and-bike-battery-charging-services">Battery Charging</a></li>
+                                <li><a href="jump-start-service-in-amravati">Jump Start Service</a></li>
+                                <li><a href="home-battery-fitting-in-amravati">Home Battery Fitting</a></li>
                             </ul>
-                        </li>
-                        <li><a href="">MERCEDES-BENZ</a>
-                            <ul class="d-flex gap-4">
-                                <li><a href="brands/mercedes-car-servicing-in-amravati">SERVICING</a></li>
-                                <li><a href="brands/turtle-wax-service-for-mercedes-benz-in-amravati">DETAILING</a></li>
+                        </details>
+                        <details>
+                            <summary>Car Detailing Services</summary>
+                            <ul class="link-list" style="margin-top:8px;">
+                                <li><a href="ceramic-coating-in-amravati">Ceramic Coating</a></li>
+                                <li><a href="ppf-coating-in-amravati.html">PPF Coating</a></li>
+                                <li><a href="car-underbody-coating-in-amravati.html">Car Underbody Coating</a></li>
+                                <li><a href="car-glass-films-in-amravati">Car Glass Films</a></li>
+                                <li><a href="car-repairing-service-in-amravati">Car & Bike Repairing</a></li>
+                                <li><a href="car-washing-service-in-amravati">Car Washing</a></li>
                             </ul>
-                        </li>
-                        <li><a href="">TOYOTA</a>
-                            <ul class="d-flex gap-4">
-                                <li><a href="brands/toyota-servicing-in-amravati">SERVICING</a></li>
-                                <li><a href="brands/toyota-ceramic-coating-in-amravati">DETAILING</a></li>
+                        </details>
+                        <details>
+                            <summary>Ampere EV Bikes Servicing</summary>
+                            <ul class="link-list" style="margin-top:8px;">
+                                <li><a href="general-repairs-and-services-for-ampere-ev">General Repairs & Servicing For Ampere EV</a></li>
                             </ul>
-                        </li>
-                        <li><a href="">HYUNDAI</a>
-                            <ul class="d-flex gap-4">
-                                <li><a href="brands/hyundai-servicing-in-amravati">SERVICING</a></li>
-                                <li><a href="brands/hyundai-cars-detailing-in-amravati">DETAILING</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="">NEXA</a>
-                            <ul class="d-flex gap-4">
-                                <li><a href="brands/nexa-car-servicing-in-amravati">SERVICING</a></li>
-                                <li><a href="brands/nexa-servicing-and-detailing-in-amravati">DETAILING</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="">MARUTI SUZUKI</a>
-                            <ul class="d-flex gap-4">
-                                <li><a href="brands/maruti-suzuki-car-servicing-in-amravati">SERVICING</a></li>
-                                <li><a href="brands/car-detailing-for-maruti-suzuki">DETAILING</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="">TATA</a>
-                            <ul class="d-flex gap-4">
-                                <li><a href="brands/tata-car-servicing-in-amravati">SERVICING</a></li>
-                                <li><a href="brands/car-detailing-for-tata-cars-in-amravati">DETAILING</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="">KIA</a>
-                            <ul class="d-flex gap-4">
-                                <li><a href="brands/kia-car-servicing-in-amravati">SERVICING</a></li>
-                                <li><a href="brands/kia-cars-detailing-in-amravati">DETAILING</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="">SKODA</a>
-                            <ul class="d-flex gap-4">
-                                <li><a href="brands/car-servicing-for-skoda-in-amravati">SERVICING</a></li>
-                                <li><a href="brands/skoda-car-detailing-in-amravati">DETAILING</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="">HONDA</a>
-                            <ul class="d-flex gap-4">
-                                <li><a href="brands/honda-car-servicing-in-amravati">SERVICING</a></li>
-                                <li><a href="brands/honda-car-detailing-service-in-amravati">DETAILING</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="">VOLKSWAGEN</a>
-                            <ul class="d-flex gap-4">
-                                <li><a href="brands/volkswagen-car-servicing-in-amravati">SERVICING</a></li>
-                                <li><a href="brands/volkswagen-car-detailing-in-amravati">DETAILING</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="">MAHINDRA</a>
-                            <ul class="d-flex gap-4">
-                                <li><a href="brands/mahindra-car-servicing-in-amravati">SERVICING</a></li>
-                                <li><a href="brands/car-detailing-for-mahindra-in-amravati">DETAILING</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="">MG</a>
-                            <ul class="d-flex gap-4">
-                                <li><a href="brands/car-servicing-for-mg-in-amravati">SERVICING</a></li>
-                                <li><a href="brands/mg-car-detailing-services-in-amravati">DETAILING</a></li>
-                            </ul>
-                        </li>
-                    </ol>
-                </li>
+                        </details>
+                    </section>
 
-                <li><a href="contact">Contact</a></li>
-                </li>
-                <li><a href="blog">Blog</a>
-                    <ol class="services-list">
-                        <li><a href="5-reasons-why-exide-batteries-are-the-best-choice">Top 5 Reasons Why Exide Batteries Are the Best Choice for Your Car</a></li>
-                        <li><a href="seasonal-bmw-maintainence-tips">Seasonal BMW Maintenance Tips for Amravati’s Climate</a></li>
-                        <li><a href="benefits-of-installing-car-glass-films-in-2025">Top Benefits of Installing Car Glass Film in 2025</a></li>
-                        <li><a href="feautures-of-ampere-nexus-st">Top Features of Ampere Nexus ST That Make It a Game-Changer</a></li>
-                        <li><a href="wheel-balancing-vs-wheel-alignment">Wheel Balancing vs. Wheel Alignment - What’s
-                                the Difference?</a></li>
-                        <li><a href="professional-car-ac-gas-refilling">Benefits of Professional AC Gas Refilling Over
-                                DIY Methods</a></li>
-                        <li><a href="how-long-does-ppf-coating-last">How Long Does PPF Last? Maintenance Tips to Extend
-                                Its Life</a></li>
-                        <li><a href="underbody-coating-options-for-ev-vehicles">Best Underbody Coating Options for
-                                Electric Vehicles (EVs) in 2025</a></li>
-                        <li><a href="how-often-should-you-service-your-car">How Often Should You Service Your Car</a>
-                        </li>
-                        <li><a href="battery-breakdown-solution">Battery Breakdown in Amravati? Why Exide is Your
-                                Reliable Power Solution</a></li>
-                        <li><a href="benefits-of-nitrogen-tyres">Top Benefits of Nitrogen Tyre Inflation for
-                                Long-Distance Drivers</a></li>
-                        <li><a href="car-ceramic-coating-vs-waxing">Ceramic Coating vs. Waxing: Which Offers Better
-                                Long-Term Protection?</a></li>
-                        <li><a href="jump-start-services-near-you-hassonjee">Jump Start Services Near You: What to
-                                Expect and How to Choose the Right Provider</a></li>
-                        <li><a href="the-cost-of-going-electric">The Cost of Going Electric: Is an EV Truly Cheaper in
-                                the Long Run?</a></li>
-                        <li><a href="professional-wheel-alignment-by-hassonjee">Why Your ADAS-Equipped Car Demands
-                                Precision Wheel Alignment</a></li>
-                        <li><a href="choosing-the-right-engine-oil-for-bikes-and-scooters">Decoding Bike/Scooter Engine
-                                Oil: Choosing the Right Type and When to Change</a></li>
-                        <li><a href="tips-to-improve-cars-fuel-efficiency">Tips for Improving Your Car's Fuel Efficiency
-                                in City Driving Conditions</a></li>
-                        <li><a href="the-impact-of-summer-heat-on-car-batteries">The Impact Of Summer Heat On Car
-                                Batteries</a></li>
-                        <li><a href="https://hassonjeeautomotive.com/best-electric-bikes-in-amravati">Best Electric
-                                Bikes for Students and Daily Commuters in Amravati</a></li>
+                    <section class="site-card sm-col-12 md-col-6 lg-col-4" data-sg>
+                        <h3>Areas We Serve</h3>
+                        <p>Service coverage across Amravati and nearby regions.</p>
+                        <ul class="link-list">
+                            <li><a href="amravati/best-car-services-in-chikaldara-amravati">CHIKALDARA</a></li>
+                            <li><a href="amravati/vehicle-services-in-chandur-railway">CHANDUR RAILWAY</a></li>
+                            <li><a href="amravati/expert-car-services-in-anjangaon">ANJANGAON</a></li>
+                            <li><a href="amravati/vehicle-servicing-in-warud">WARUD</a></li>
+                            <li><a href="amravati/automotive-services-in-paratwada">PARATWADA</a></li>
+                            <li><a href="amravati/car-servicing-in-achalpur">ACHALPUR</a></li>
+                            <li><a href="amravati/shegaon-naka">SHEGAON NAKA</a></li>
+                            <li><a href="amravati/sai-nagar">SAI NAGAR</a></li>
+                            <li><a href="amravati/kathora-naka">KATHORA NAKA</a></li>
+                            <li><a href="amravati/rahatgaon">RAHATGAON</a></li>
+                            <li><a href="amravati/badnera">BADNERA</a></li>
+                            <li><a href="amravati/dastur-nagar">DASTUR NAGAR</a></li>
+                        </ul>
+                    </section>
 
+                    <section class="site-card sm-col-12 md-col-6 lg-col-4" data-sg>
+                        <h3>Our Garage</h3>
+                        <p>Brand-specific service and detailing pages.</p>
+                        <div class="brand-item">
+                            <strong>BMW</strong>
+                            <div class="brand-actions">
+                                <a href="brands/car-servicing-for-bmw-in-amravati">Servicing</a>
+                                <a href="brands/car-detailing-service-for-bmw-in-amravati">Detailing</a>
+                            </div>
+                        </div>
+                        <div class="brand-item">
+                            <strong>AUDI</strong>
+                            <div class="brand-actions">
+                                <a href="brands/audi-car-servicing-in-amravati">Servicing</a>
+                                <a href="brands/ceramic-coating-for-audi-in-amravati">Detailing</a>
+                            </div>
+                        </div>
+                        <div class="brand-item">
+                            <strong>MERCEDES-BENZ</strong>
+                            <div class="brand-actions">
+                                <a href="brands/mercedes-car-servicing-in-amravati">Servicing</a>
+                                <a href="brands/turtle-wax-service-for-mercedes-benz-in-amravati">Detailing</a>
+                            </div>
+                        </div>
+                        <div class="brand-item">
+                            <strong>TOYOTA</strong>
+                            <div class="brand-actions">
+                                <a href="brands/toyota-servicing-in-amravati">Servicing</a>
+                                <a href="brands/toyota-ceramic-coating-in-amravati">Detailing</a>
+                            </div>
+                        </div>
+                        <div class="brand-item">
+                            <strong>HYUNDAI</strong>
+                            <div class="brand-actions">
+                                <a href="brands/hyundai-servicing-in-amravati">Servicing</a>
+                                <a href="brands/hyundai-cars-detailing-in-amravati">Detailing</a>
+                            </div>
+                        </div>
+                        <div class="brand-item">
+                            <strong>NEXA</strong>
+                            <div class="brand-actions">
+                                <a href="brands/nexa-car-servicing-in-amravati">Servicing</a>
+                                <a href="brands/nexa-servicing-and-detailing-in-amravati">Detailing</a>
+                            </div>
+                        </div>
+                        <div class="brand-item">
+                            <strong>MARUTI SUZUKI</strong>
+                            <div class="brand-actions">
+                                <a href="brands/maruti-suzuki-car-servicing-in-amravati">Servicing</a>
+                                <a href="brands/car-detailing-for-maruti-suzuki">Detailing</a>
+                            </div>
+                        </div>
+                        
+                    </section>
+                    <section class="site-card sm-col-12 md-col-6 lg-col-4" data-sg>
+                        <h3>Our Garage</h3>
+                        <p>Brand-specific service and detailing pages.</p>
+                        <div class="brand-item">
+                            <strong>TATA</strong>
+                            <div class="brand-actions">
+                                <a href="brands/tata-car-servicing-in-amravati">Servicing</a>
+                                <a href="brands/car-detailing-for-tata-cars-in-amravati">Detailing</a>
+                            </div>
+                        </div>
+                        <div class="brand-item">
+                            <strong>KIA</strong>
+                            <div class="brand-actions">
+                                <a href="brands/kia-car-servicing-in-amravati">Servicing</a>
+                                <a href="brands/kia-cars-detailing-in-amravati">Detailing</a>
+                            </div>
+                        </div>
+                        <div class="brand-item">
+                            <strong>SKODA</strong>
+                            <div class="brand-actions">
+                                <a href="brands/car-servicing-for-skoda-in-amravati">Servicing</a>
+                                <a href="brands/skoda-car-detailing-in-amravati">Detailing</a>
+                            </div>
+                        </div>
+                        <div class="brand-item">
+                            <strong>HONDA</strong>
+                            <div class="brand-actions">
+                                <a href="brands/honda-car-servicing-in-amravati">Servicing</a>
+                                <a href="brands/honda-car-detailing-service-in-amravati">Detailing</a>
+                            </div>
+                        </div>
+                        <div class="brand-item">
+                            <strong>VOLKSWAGEN</strong>
+                            <div class="brand-actions">
+                                <a href="brands/volkswagen-car-servicing-in-amravati">Servicing</a>
+                                <a href="brands/volkswagen-car-detailing-in-amravati">Detailing</a>
+                            </div>
+                        </div>
+                        <div class="brand-item">
+                            <strong>MAHINDRA</strong>
+                            <div class="brand-actions">
+                                <a href="brands/mahindra-car-servicing-in-amravati">Servicing</a>
+                                <a href="brands/car-detailing-for-mahindra-in-amravati">Detailing</a>
+                            </div>
+                        </div>
+                        <div class="brand-item">
+                            <strong>MG</strong>
+                            <div class="brand-actions">
+                                <a href="brands/car-servicing-for-mg-in-amravati">Servicing</a>
+                                <a href="brands/mg-car-detailing-services-in-amravati">Detailing</a>
+                            </div>
+                        </div>
+                    </section>
 
-                        <li><a href="https://hassonjeeautomotive.com/affordable-car-services-by-hassonjee-in-amravati">Affordable
-                                Car Servicing Near Me: What Hassonjee Offers in Amravati</a></li>
+                    <section class="site-card sm-col-12 md-col-6 lg-col-8" data-sg>
+                        <h3>Blog</h3>
+                        <p>Guides, offers, and maintenance tips.</p>
+                        <ul class="link-list">
+                            <li><a href="festive-50-off-car-service-amravati">Festive Season Bonanza: Flat 50% Off on General Car Services</a></li>
+                            <li><a href="navratri-car-coating-offers-amravati">Navratri Offers: Ceramic & Graphene Coating</a></li>
+                            <li><a href="5-reasons-why-exide-batteries-are-the-best-choice">Top 5 Reasons to Choose Exide Batteries</a></li>
+                            <li><a href="seasonal-bmw-maintainence-tips">Seasonal BMW Maintenance Tips</a></li>
+                            <li><a href="benefits-of-installing-car-glass-films-in-2025">Top Benefits of Installing Car Glass Film in 2025</a></li>
+                            <li><a href="feautures-of-ampere-nexus-st">Top Features of Ampere Nexus ST</a></li>
+                            <li><a href="wheel-balancing-vs-wheel-alignment">Wheel Balancing vs. Wheel Alignment</a></li>
+                            <li><a href="professional-car-ac-gas-refilling">Why Professional AC Gas Refilling Beats DIY</a></li>
+                            <li><a href="how-long-does-ppf-coating-last">How Long Does PPF Last?</a></li>
+                            <li><a href="underbody-coating-options-for-ev-vehicles">Best Underbody Coating for EVs (2025)</a></li>
+                            <li><a href="how-often-should-you-service-your-car">How Often Should You Service Your Car?</a></li>
+                            <li><a href="battery-breakdown-solution">Battery Breakdown in Amravati? Choose Exide</a></li>
+                            <li><a href="benefits-of-nitrogen-tyres">Benefits of Nitrogen Tyre Inflation</a></li>
+                            <li><a href="car-ceramic-coating-vs-waxing">Ceramic Coating vs. Waxing</a></li>
+                            <li><a href="jump-start-services-near-you-hassonjee">Jump Start Services Near You</a></li>
+                            <li><a href="the-cost-of-going-electric">The Cost of Going Electric</a></li>
+                            <li><a href="professional-wheel-alignment-by-hassonjee">Why ADAS Cars Need Precision Alignment</a></li>
+                            <li><a href="choosing-the-right-engine-oil-for-bikes-and-scooters">Choosing Bike/Scooter Engine Oil</a></li>
+                            <li><a href="tips-to-improve-cars-fuel-efficiency">Improve Fuel Efficiency in City Driving</a></li>
+                            <li><a href="the-impact-of-summer-heat-on-car-batteries">Impact of Summer Heat on Car Batteries</a></li>
+                            <li><a href="https://hassonjeeautomotive.com/best-electric-bikes-in-amravati">Best Electric Bikes for Students & Commuters</a></li>
+                            <li><a href="https://hassonjeeautomotive.com/affordable-car-services-by-hassonjee-in-amravati">Affordable Car Servicing Near Me</a></li>
+                            <li><a href="https://hassonjeeautomotive.com/tube-vs-tubeless-tyres">Tube vs Tubeless Tyres</a></li>
+                            <li><a href="https://hassonjeeautomotive.com/monsoon-car-care-tips">Monsoon Car Care Tips</a></li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
 
-                        <li><a href="https://hassonjeeautomotive.com/tube-vs-tubeless-tyres">Tube vs Tubeless Tyres –
-                                Which One Should You Choose?</a></li>
-                        <li><a href="https://hassonjeeautomotive.com/monsoon-car-care-tips">Monsoon Car Care Tips: Keep
-                                Your Vehicle Safe During the Rainy Season</a></li>
+            <script>
+                (function() {
+                    const q = document.getElementById('sitemapFilter');
+                    if (!q) return;
+                    const root = document.querySelectorAll('[data-sg]'); // cards
+                    q.addEventListener('input', function() {
+                        const val = (q.value || '').trim().toLowerCase();
+                        // Reset visibility
+                        const allLinkItems = document.querySelectorAll('.link-list li, .brand-item');
+                        const allCards = document.querySelectorAll('[data-sg]');
+                        const allDetails = document.querySelectorAll('details');
 
-                    </ol>
-                </li>
-                <!-- <li><a href="best-tyres-for-all-vehicles-in-amravati">MRF Tyres</a></li>
-            <li><a href="exide-batteries-amravati">Exide Batteries</a></li>
-            <li><a href="ampere-electric-bike-showroom-in-amravati">Ampere Scooter</a></li>
-            <li><a href="premium-car-detailing-services-in-amravati">Turtle Wax</a></li>
-            <li><a href="contact">Contact</a></li> -->
-            </ul>
+                        if (!val) {
+                            allCards.forEach(c => c.classList.remove('filter-hide'));
+                            allLinkItems.forEach(li => li.classList.remove('filter-hide'));
+                            allDetails.forEach(d => {
+                                d.open = d.hasAttribute('open');
+                            });
+                            return;
+                        }
+
+                        // Filter individual links/brands by match
+                        allLinkItems.forEach(el => {
+                            const text = el.textContent.toLowerCase();
+                            const href = (el.querySelector('a')?.getAttribute('href') || '').toLowerCase();
+                            if (text.includes(val) || href.includes(val)) el.classList.remove('filter-hide');
+                            else el.classList.add('filter-hide');
+                        });
+
+                        // Hide cards with no visible children
+                        allCards.forEach(card => {
+                            const visible = card.querySelector('.link-list li:not(.filter-hide), .brand-item:not(.filter-hide)');
+                            card.classList.toggle('filter-hide', !visible);
+                        });
+
+                        // Expand all details when filtering for easier discovery
+                        allDetails.forEach(d => d.open = true);
+                    });
+                })();
+            </script>
         </main>
-
-
-
-        <!-- FOOTER AREA START (ltn__footer-2 ltn__footer-color-1) -->
         <footer class="ltn__footer-area ltn__footer-2 ltn__footer-color-1">
-            <div class="footer-top-area footer-top-extra-padding section-bg-2 bg-image" data-bs-bg="">
+            <div class="footer-top-area footer-top-extra-padding section-bg-2 bg-image">
                 <div class="container">
                     <div class="row">
-                        <!-- About Section -->
                         <div class="col-xl-3 col-md-6 col-12">
                             <div class="footer-widget footer-about-widget clearfix">
-                                <img src="img/logoes/hassonjee logo-05.png" alt="" width="60%">
-                                <br><br>
+                                <img src="img/logoes/hassonjee logo-05.png" alt="" width="60%"><br><br>
                                 <p style="text-align: justify;">
-                                    We specialize in providing top-quality tyres with our MRF partnership, dependable
-                                    Exide
-                                    batteries, and innovative EV solutions through our tie-up with Amper. Our service
-                                    center
-                                    offers expert car care, including polishing, denting, painting, washing, and
-                                    lamination,
+                                    We specialize in providing top-quality tyres with our MRF partnership, dependable Exide
+                                    batteries, and innovative EV solutions through our tie-up with Amper. Our service center
+                                    offers expert car care, including polishing, denting, painting, washing, and lamination,
                                     with Turtle Wax products for a perfect finish.
                                 </p>
                             </div>
                         </div>
 
-
-                        <!-- Quick Links Section -->
                         <div class="col-xl-2 col-md-6 col-12">
                             <div class="footer-widget footer-menu-widget footer-menu-widget-2-column clearfix">
                                 <div class="quick-links">
@@ -531,81 +647,48 @@
                             </div>
                         </div>
 
-                        <!-- Services Section -->
                         <div class="col-xl-3 col-md-6 col-12">
                             <div class="footer-widget footer-menu-widget footer-menu-widget-2-column clearfix">
                                 <div class="quick-links">
                                     <h4 class="footer-title">Services</h4>
                                     <div class="footer-menu">
                                         <ul>
-                                            <li><a href="best-tyres-for-all-vehicles-in-amravati">Tyres For All Vehicles
-                                                    Types</a></li>
+                                            <li><a href="best-tyres-for-all-vehicles-in-amravati">Tyres For All Vehicles Types</a></li>
                                             <li><a href="exide-batteries-amravati">Exide batteries</a></li>
-                                            <li><a href="ampere-electric-bike-showroom-in-amravati">Ampere
-                                                    EV-Scooters</a>
-                                            </li>
-                                            <li><a href="premium-car-detailing-services-in-amravati">Turtle Wax Car
-                                                    Care</a>
-                                            </li>
+                                            <li><a href="ampere-electric-bike-showroom-in-amravati">Ampere EV-Scooters</a></li>
+                                            <li><a href="premium-car-detailing-services-in-amravati">Turtle Wax Car Care</a></li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- Contact Info Section -->
                         <div class="col-xl-3 col-md-6 col-12">
                             <div class="footer-widget footer-contact-widget clearfix">
                                 <h4 class="footer-title">Hassonjee Automotives</h4>
                                 <ul style="list-style: none; padding-left: 0;">
-                                    <li><strong>Address:</strong><br> <a
-                                            href="https://maps.app.goo.gl/ZDFR5ww4u85g2y7aA" target="_blank">Raj
-                                            Complex, Vilas Nagar Road, Amravati Pin Code: 444603</a>
-                                    </li>
-                                    <li><strong>Phone:</strong><br> <a href="tel:+917558684506">+91 75586 84506</a></li>
-                                    <li><strong>Email:</strong><br> <a
-                                            href="mailto:m.hassonjee@gmail.com">m.hassonjee@gmail.com</a></li>
+                                    <li><strong>Address:</strong><br><a href="https://maps.app.goo.gl/ZDFR5ww4u85g2y7aA" target="_blank">Raj Complex, Vilas Nagar Road, Amravati Pin Code: 444603</a></li>
+                                    <li><strong>Phone:</strong><br><a href="tel:+917558684506">+91 75586 84506</a></li>
+                                    <li><strong>Email:</strong><br><a href="mailto:m.hassonjee@gmail.com">m.hassonjee@gmail.com</a></li>
                                 </ul>
                             </div>
                         </div>
-
-                        <!-- Location Section (Stacked Below on Mobile) -->
-                        <!-- <div class="col-12 mt-4">
-                        <div class="footer-widget footer-map-widget">
-                            <h4 class="footer-title">Our Location</h4>
-                            <div class="map-container" style="height: 200px;">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2906.1955422962938!2d77.75612977393143!3d20.94687099058869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd6a35add2423fd%3A0xb34f37be56261b75!2sHassonjee%20Automotives!5e1!3m2!1sen!2sin!4v1736937315743!5m2!1sen!2sin"></iframe>
-                            </div>
-                        </div>
-                    </div> -->
                     </div>
                 </div>
             </div>
 
-            <!-- Footer Bottom -->
             <div class="ltn__copyright-area ltn__copyright-2">
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
                             <div class="get-support-info text-center">
-                                <h6>
-                                    © 2025 Hassonjee Automotives. All Rights Reserved |
-                                    Designed & Developed by <a href="https://www.visionarybizz.com/">Visionary
-                                        Services</a>
-                                </h6>
+                                <h6>© 2025 Hassonjee Automotives. All Rights Reserved | Designed & Developed by <a href="https://www.visionarybizz.com/">Visionary Services</a></h6>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </footer>
-
-
-        <!-- FOOTER AREA END -->
-
-        <!-- Body main wrapper end -->
-
-        <!-- preloader area start -->
         <div class="preloader" id="preloader">
             <div class="preloader-inner">
                 <div class="spinner">
@@ -614,13 +697,10 @@
                 </div>
             </div>
         </div>
-        <!-- preloader area end -->
+    </div>
 
-        <!-- All JS Plugins -->
-        <script src="js/plugins.js"></script>
-        <!-- Main JS -->
-        <script src="js/main.js"></script>
-
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
