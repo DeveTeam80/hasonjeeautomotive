@@ -1633,42 +1633,41 @@
         });
     </script>
     <script>
-  fetch("blog.json")
+  fetch("json/blog.json")
     .then(res => res.json())
     .then(blogs => {
       const container = document.getElementById("latest-blogs-container");
 
       blogs.slice(0, 3).forEach(blog => {
-        const html = `
-          <div class="col-lg-4 col-md-6 col-12">
-            <div class="ltn__blog-item ltn__blog-item-4 bg-image"
-              data-bs-bg="${blog.big_image || blog.image}">
-              <div class="ltn__blog-brief">
-                <h3 class="ltn__blog-title">
-                  <a href="${blog.url}">
-                    ${blog.title}
-                  </a>
-                </h3>
-                ${blog.excerpt ? `
-                  <a href="${blog.url}">
-                    <p>${blog.excerpt}</p>
-                  </a>` : ``}
-                <div class="ltn__blog-meta-btn">
-                  <div class="ltn__blog-meta">
-                    <ul>
-                      <li class="ltn__blog-date">
-                        <i class="far fa-envelope"></i> ${blog.date}
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="ltn__blog-btn">
-                    <a href="${blog.url}">Read more</a>
-                  </div>
-                </div>
+            const html = `
+        <div class="col-lg-4 col-sm-6 col-12">
+          <div class="ltn__feature-item2 ltn__feature-item-blog">
+            <div class="ltn__feature-icon-title">
+              <div class="ltn__feature-icon">
+                <a href="${blog.url}">
+                  <img 
+                    src="${blog.image}" 
+                    alt="${blog.image_alt}" 
+                    title="${blog.image_title || ''}"
+                    loading="lazy"
+                  >
+                </a>
               </div>
             </div>
+            <div class="ltn__feature-info">
+              <a href="${blog.url}">
+                <i class="far fa-calendar-alt"></i>${blog.date}
+              </a>
+              <p class="blog-title">
+                <a href="${blog.url}">
+                  ${blog.title}
+                </a>
+              </p>
+              <a href="${blog.url}" class="read-more">Read More</a>
+            </div>
           </div>
-        `;
+        </div>
+      `;
 
         container.insertAdjacentHTML("beforeend", html);
       });
