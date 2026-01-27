@@ -1,44 +1,44 @@
 .animate-on-scroll {
-    transform: translateX(100%);
-    opacity: 0;
-    transition: all 1s ease-in-out;
-   }
-   
-   .animate-on-scroll.visible {
-    transform: translateX(0);
-    opacity: 1;
-   }
-   
-   .animate-on-scroll1 {
-    transform: translateX(-100%);
-    opacity: 0;
-    transition: all 1s ease-in-out !important;
-   }
-   
-   .animate-on-scroll1.visible {
-    transform: translateX(0);
-    opacity: 1;
-   }
-   /* Fade in from the right */
-   .animate-on-scroll2 {
-    transform: translateX(100%);
-    opacity: 0;
-    transition: all 1s ease-in-out;
-   }
-   
-   .animate-on-scroll2.visible {
-    transform: translateX(0);
-    opacity: 1;
-   }
-   
-   /* Fade in from the bottom */
-   .animate-on-scroll3 {
-    transform: translateY(100%);
-    opacity: 0;
-    transition: all 1s ease-in-out;
-   }
-   
-   .animate-on-scroll3.visible {
-    transform: translateY(0);
-    opacity: 1;
-   }
+  transform: translateX(100%);
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+
+.animate-on-scroll.visible {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.animate-on-scroll1 {
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: all 1s ease-in-out !important;
+}
+
+.animate-on-scroll1.visible {
+  transform: translateX(0);
+  opacity: 1;
+}
+/* Fade in from the right */
+.animate-on-scroll2 {
+  transform: translateX(100%);
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+
+.animate-on-scroll2.visible {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/* Fade in from the bottom */
+.animate-on-scroll3 {
+  transform: translateY(100%);
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+
+.animate-on-scroll3.visible {
+  transform: translateY(0);
+  opacity: 1;
+}
